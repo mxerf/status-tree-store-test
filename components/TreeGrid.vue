@@ -91,6 +91,7 @@ const columnDefs = computed<ColDef[]>(() => [
     cellRendererParams: {
       isEditMode: isEditMode.value,
     },
+    pinned: "right",
   },
 ]);
 
