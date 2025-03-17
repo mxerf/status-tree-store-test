@@ -16,7 +16,7 @@ const { params } = defineProps<{
       @click="params.addItem"
       :disabled="!params.isEditMode"
     >
-      Add row
+      Добавить элемент
     </button>
   </div>
 </template>
