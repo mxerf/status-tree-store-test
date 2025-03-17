@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 24px;
+}
+
+.toolbar-undo-redo {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 4px;
+}
+
+.edit-mode-btn {
+  color: cornflowerblue;
+}
+
+.edit-mode-btn:hover {
+  text-decoration: underline;
+}
+
+.undo-redo-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: cornflowerblue;
+  color: whitesmoke;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+
+.undo-redo-btn:hover {
+  background-color: darkblue;
+}
+
+.undo-redo-btn:disabled {
+  background-color: grey;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.action-buttons-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  height: 100%;
+}
+
+.action-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+
+.add-btn {
+  color: whitesmoke;
+  background-color: cornflowerblue;
+}
+
+.add-btn:hover {
+  background-color: darkblue;
+}
+
+.delete-btn {
+  color: whitesmoke;
+  background-color: crimson;
+}
+
+.delete-btn:hover {
+  background-color: darkred;
+}
+
+.action-button:disabled,
+.add-btn:disabled,
+.delete-btn:disabled {
+  background-color: grey;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.no-rows-overlay-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: cornflowerblue;
+  padding: 8px 16px;
+  border-radius: 999px;
+  pointer-events: all;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.no-rows-overlay-button:hover {
+  background-color: darkblue;
+}
+
+.no-rows-overlay-button:disabled {
+  background-color: grey;
+  pointer-events: none;
+  cursor: not-allowed;
+}

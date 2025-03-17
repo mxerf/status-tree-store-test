@@ -7,18 +7,22 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "test": "vitest"
   },
   "dependencies": {
-    "@ag-grid-community/core": "^32.3.4",
-    "@ag-grid-community/vue3": "^32.3.4",
+    "@vitejs/plugin-vue": "^5.2.3",
+    "ag-grid-enterprise": "^33.1.1",
+    "ag-grid-vue3": "^33.1.1",
     "nuxt": "^3.16.0",
     "pinia": "^3.0.1",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0"
   },
   "devDependencies": {
+    "@testing-library/vue": "^8.1.0",
     "@vue/test-utils": "^2.4.6",
+    "jsdom": "^26.0.0",
     "vitest": "^3.0.9",
     "vue-test-utils": "^1.0.0-beta.11"
   }
